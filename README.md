@@ -2,26 +2,32 @@
 
 # serialterm
 
-A (very) simple serial terminal written in Python to be run
-from the Windows command prompt
+A basic serial terminal program written in Python to be run
+from the Windows 10 command prompt.
 
 ## Before downloading ...
 
-If you are looking for a nice and easy to use serial terminal to
-use on your Windows 10 laptop then this one is NOT for you. Instead
-try Simon Tatham's excellent `putty`.
+This serial terminal program is designed to be
+run and controlled by another program. If you want a serial terminal
+program for interactive (i.e. human) use then I recommend
+using `putty` by Simon Tahham - visit:
 
-However, if you want a simple serial terminal program that you can
-run in a Windows command prompt window and control from an
-automation program then this might be for you.
+[PuTTY: a free SSH and Telnet client](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
 
-## Why did I write this?
+for more details.
+
+## Why did I write the `serialterm.py` program?
 
 I wanted to automate a serial terminal session on Windows 10 to
 configure a range of devices I might connect to the serial port.
 Here is a good example on YouTube of me doing exactly that:
 
 [Raritan intelligent PDU being automatically configured via serial port](http://bit.ly/2H85TKf)
+
+Trying to automate a serial terminal programs like putty was, while possible, quite
+a bit of work. If I wrote my own program I would have complete control
+over its appearance and expected inputs and this would make automating it
+predictable and simpler.
 
 ## Pre-requisites
 
@@ -34,7 +40,7 @@ As well as the `serialterm.py` code here is what you also need:
 Note: earlier versions of all of the above may well work as
 the `serialterm.py` code does not do anything that unusual.
 
-## Running
+## Running `serialterm.py`
 
 First of all run as:
 
@@ -42,9 +48,9 @@ First of all run as:
 python serialterm.py list
 ```
 
-This will list any available COM style ports available.
+This will list any available COM ports.
 
-If port `COM7` was available you could connect to it as follows:
+For example if port `COM7` was available you could connect to it as follows:
 
 ```
 python serialterm.py com7
@@ -84,17 +90,15 @@ python serialterm.py -h
 
 to see all the command line options.
 
-Better still visit:
+## Still to document
 
-[xxx](http://yyy)
+This README document is incomplete.  I still need to add detail on:
 
-For a demo video on YouTube.
+* The --capture and --defer arguments
+* Using the ~ (tilde) character escapes
+* The --ptimeout and -ktimeout arguments
 
-## Built with automation in mind
 
-The program is intended by another program - NOT a human typing away. This keeps
-code simple.  It also makes it easy to add features to help your automation
-activities.
 
 -------------------------------
 
