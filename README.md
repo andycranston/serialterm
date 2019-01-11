@@ -1,5 +1,3 @@
-------------------------------------------------------------------------
-
 # serialterm
 
 A basic serial terminal program written in Python to be run
