@@ -1,3 +1,5 @@
+------------------------------------------------------------------------
+
 # serialterm
 
 A (very) simple serial terminal written in Python to be run
@@ -5,18 +7,19 @@ from the Windows command prompt
 
 ## Before downloading ...
 
-If you are looking for a nice and easy to use serial terminal to use on
-your Windows 10 laptop then this one is NOT for you. Instead try Simon Tatham's excellent
-`putty`.
+If you are looking for a nice and easy to use serial terminal to
+use on your Windows 10 laptop then this one is NOT for you. Instead
+try Simon Tatham's excellent `putty`.
 
-However, if you want a simple serial terminal program that you can run
-in a Windows command prompt window and control from an automation
-program then this might be for you.
+However, if you want a simple serial terminal program that you can
+run in a Windows command prompt window and control from an
+automation program then this might be for you.
 
 ## Why did I write this?
 
-I wanted to automate a serial terminal session on Windows 10 to configure a range of devices
-I might connect to the serial port.  Here is a good example on YouTube of me doing exactly that:
+I wanted to automate a serial terminal session on Windows 10 to
+configure a range of devices I might connect to the serial port.
+Here is a good example on YouTube of me doing exactly that:
 
 [Raritan intelligent PDU being automatically configured via serial port](http://bit.ly/2H85TKf)
 
@@ -28,8 +31,8 @@ As well as the `serialterm.py` code here is what you also need:
 * Python 3.7
 * Python module `pyserial` 3.4
 
-Note: earlier versions of all of the above may well work as the `serialterm.py` code
-does not do anything that unusual.
+Note: earlier versions of all of the above may well work as
+the `serialterm.py` code does not do anything that unusual.
 
 ## Running
 
