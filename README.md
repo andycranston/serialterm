@@ -22,11 +22,11 @@ Here is a good example on YouTube of me doing exactly that:
 
 [Raritan intelligent PDU being automatically configured via serial port](http://bit.ly/2H85TKf)
 
-Trying to automate a serial terminal program like putty was, while possible, quite
-a bit of work. I quickly realised that if I wrote my own program I would have complete
-control
-over its appearance and expected inputs and this would make automating it
-predictable and simpler.
+Trying to automate a serial terminal program like `putty` was, while
+possible, quite a bit of work. I quickly realised that if I wrote my
+own program I would have complete control over the appearance and
+expected inputs and this would make the process of automating it
+easier.
 
 ## Pre-requisites
 
@@ -77,7 +77,7 @@ and the program will exit with a nice message.
 
 ## I want to type the `~` character
 
-Just type `~` twice to get one `~` and it do what you want.
+Just type `~` twice to get one `~`
 
 ## What else can it do?
 
