@@ -8,7 +8,7 @@ from the Windows 10 command prompt.
 This serial terminal program is designed to be
 run and controlled by another program. If you want a serial terminal
 program for interactive (i.e. human) use then I recommend
-using `putty` by Simon Tahham - visit:
+using `putty` by Simon Tatham - visit:
 
 [PuTTY: a free SSH and Telnet client](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
 
@@ -17,13 +17,14 @@ for more details.
 ## Why did I write the `serialterm.py` program?
 
 I wanted to automate a serial terminal session on Windows 10 to
-configure a range of devices I might connect to the serial port.
+configure a range of devices that I might connect to the serial port.
 Here is a good example on YouTube of me doing exactly that:
 
 [Raritan intelligent PDU being automatically configured via serial port](http://bit.ly/2H85TKf)
 
-Trying to automate a serial terminal programs like putty was, while possible, quite
-a bit of work. If I wrote my own program I would have complete control
+Trying to automate a serial terminal program like putty was, while possible, quite
+a bit of work. If quickly realised that I wrote my own program I would have complete
+control
 over its appearance and expected inputs and this would make automating it
 predictable and simpler.
 
@@ -54,8 +55,8 @@ For example if port `COM7` was available you could connect to it as follows:
 python serialterm.py com7
 ```
 
-If you need to specify a speed then use the `--speed` command line option.  For example
-to connect at 9600:
+If you need to specify a connection speed then use the `--speed` command
+line option.  For example to connect at 9600:
 
 ```
 python serialterm.py --speed 9600 com7
@@ -76,11 +77,11 @@ and the program will exit with a nice message.
 
 ## I want to type the `~` character
 
-Easy - just type `~` twice to get one `~`.  Give it a try.
+Just type `~` twice to get one `~`.  Give it a try.
 
 ## What else can it do?
 
-Not much.  Run:
+Run:
 
 ```
 python serialterm.py -h
