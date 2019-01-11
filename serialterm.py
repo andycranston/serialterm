@@ -156,7 +156,7 @@ def main():
 
     parser = argparse.ArgumentParser()
         
-    parser.add_argument('port',       help='COMn port name (e.g. "COM1") or "list" to show available ports')
+    parser.add_argument('port',       help='COMn port name (e.g. "COM1") to connect to or "list" to show available ports')
     parser.add_argument('--speed',    help='baud rate',                           default=DEFAULT_SPEED)
     parser.add_argument('--capture',  help='file name to capture output',         nargs=1)
     parser.add_argument('--defer',    help='defer capture output',                action='store_true')
