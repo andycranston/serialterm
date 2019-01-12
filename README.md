@@ -93,7 +93,7 @@ Run:
 python serialterm.py --capture term.txt com7
 ```
 
-to have all seesion output copied to file `term.txt`.
+to have all session output copied to file `term.txt`.
 
 The related `--defer` option sets up session output capture but does
 not start capturing:
@@ -124,14 +124,14 @@ you need during a session.
 
 ## Use a different escape character
 
-By default the escape character is the tiled '~' character.  To use another
+By default the escape character is the tilde '~' character.  To use another
 character:
 
 ```
 python serialterm.py --escape + com7
 ```
 
-In this exampel the plus sign '+' character is now the escape character
+In this example the plus sign '+' character is now the escape character
 so to exit the program you now type:
 
 ```
@@ -154,7 +154,7 @@ To make `serialterm` respond a bit faster try:
 python serialterm.py --ptimeout 0.001 -ktimeout 0.001 com7
 ```
 
-but bear in mind this might cause more CPU cycles to be used even when there is
+but bear in mind this will cause more CPU cycles to be used even when there is
 no data to be read from the port or no key strokes to be read from
 the keyboard.
 
