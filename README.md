@@ -11,7 +11,7 @@ This link:
 
 is a ten minute YouTube video showing what the program can do.
 
-Note that this is designed to be
+Note that the `serialterm` program is designed to be
 run and controlled by another program. If you want a serial terminal
 program for interactive (i.e. human) use then I recommend
 using `putty` by Simon Tatham - visit:
@@ -99,7 +99,7 @@ The related `--defer` option sets up session output capture but does
 not start capturing:
 
 ```
-python serialterm.py --capture term.txt com7
+python serialterm.py --capture term.txt --defer com7
 ```
 
 With `--defer` in order to actually start capure type the two character
